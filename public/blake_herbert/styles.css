@@ -1,0 +1,72 @@
+html {
+    font-family: sans-serif;
+    background-image: url('darkGreenLeaves.jpg'); 
+}
+h1 {
+    font-size: 3rem;
+    color: white;
+    display: flex;
+    height: 100%;
+    place-items: center;
+    place-content: center;
+}
+h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+    display: flex;
+    place-items: center;
+    place-content: center;
+}
+.subheader {
+    color: white;
+    display: flex;
+    height: 100%;
+    place-items: center;
+    place-content: center;
+}
+p {
+    color: white;
+}
+.headerContainer {
+    background-color: rgba(69, 69, 69, 0.8);
+    padding: 1rem;
+    margin: 0rem 1rem;
+}
+.hobbiesContainer {
+    display: flex;
+    justify-content: space-between;
+
+}
+.hobbiesPannel {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    background-color: rgba(69, 69, 69, 0.8);
+    padding: 1rem;
+    margin: 1rem;
+}
+.hobbiesList {
+    color: white;
+}
+
+
+.scroll-container {
+    display: flex;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%; /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.scroll-panel {
+    display: inline-block;
+    width: 200px;  /* Set your panel width */
+    height: 150px; /* Set your panel height */
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    text-align: center;
+    line-height: 150px; /* Center text vertically */
+    font-size: 1.2em;
+}
