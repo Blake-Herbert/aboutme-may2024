@@ -33,8 +33,9 @@ p {
     margin: 0rem 1rem;
 }
 .hobbiesContainer {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: auto;
 
 }
 .hobbiesPannel {
@@ -50,23 +51,25 @@ p {
 }
 
 
-.scroll-container {
+.monkeyInfo {
+    color: white;
+    background-color: rgba(69, 69, 69, 0.8);
+    padding: 1rem;
+    margin: 4rem auto 1rem;
+    width: fit-content;
     display: flex;
-    overflow-x: auto;
-    white-space: nowrap;
-    width: 100%; /* Adjust as needed */
-    padding: 10px;
-    border: 1px solid #ccc;
+    height: 100%;
+    place-items: center;
+    place-content: center;
 }
 
-.scroll-panel {
-    display: inline-block;
-    width: 200px;  /* Set your panel width */
-    height: 150px; /* Set your panel height */
-    margin-right: 10px;
-    background-color: #f0f0f0;
-    border: 1px solid #ddd;
-    text-align: center;
-    line-height: 150px; /* Center text vertically */
-    font-size: 1.2em;
+.monkeyScroller{
+    display: grid;
+    gap: 1rem;
+    grid-auto-flow: column;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.monkeyContainer {
+    
 }
