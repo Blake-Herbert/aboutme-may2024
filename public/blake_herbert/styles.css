@@ -47,10 +47,16 @@ p {
     padding: 1rem;
     margin: 1rem;
 }
+
+@media (max-width: 768px) {
+    .hobbiesContainer {
+        grid-auto-flow: row;
+    }
+}
+
 .hobbiesList {
     color: white;
 }
-
 
 .monkeyInfo {
     color: white;
